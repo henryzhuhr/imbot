@@ -23,12 +23,13 @@ members = ["packages/*"]
 [[tool.uv.index]]
 url = "https://mirrors.ustc.edu.cn/pypi/simple"
 
-[dependency-groups]
-dev = [
-    "pytest>=9.0.2",
-]
-
 
 [[tool.uv.index]]
 url = "https://mirrors.cloud.tencent.com/pypi/simple/"
 default = true
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "ruff>=0.15.3",
+]
