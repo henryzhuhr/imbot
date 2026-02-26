@@ -2,7 +2,6 @@
 name = "newsfetcher"
 version = "0.1.0"
 description = "News fetcher module - fetch news from various channels"
-readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
 

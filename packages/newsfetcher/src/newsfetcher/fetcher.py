@@ -1,26 +1,18 @@
-"""
-新闻获取器 - hello world 示例
-"""
-
-
-class NewsItem:
-    """单条新闻数据模型"""
-
-    def __init__(self, title: str, source: str, content: str = "") -> None:
-        self.title = title
-        self.source = source
-        self.content = content
-
-    def __repr__(self) -> str:
-        return f"NewsItem(title={self.title!r}, source={self.source!r})"
+"""新闻获取器 - Hello World 示例"""
 
 
 class NewsFetcher:
-    """新闻获取器，从不同渠道拉取消息"""
+    """新闻获取器，负责从不同渠道拉取消息"""
 
-    def fetch(self) -> list[NewsItem]:
-        """从所有已注册的渠道拉取新闻（hello world 示例）"""
-        print("Hello from newsfetcher!")
+    def __init__(self, source: str = "default"):
+        self.source = source
+
+    def hello(self) -> str:
+        return f"[NewsFetcher] Hello from source: {self.source}"
+
+    def fetch(self) -> list[str]:
+        """拉取新闻消息（示例）"""
         return [
-            NewsItem(title="示例新闻标题", source="example", content="这是一条示例新闻。")
+            f"[{self.source}] 示例新闻 1",
+            f"[{self.source}] 示例新闻 2",
         ]
