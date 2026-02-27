@@ -4,17 +4,7 @@ Stock module - news fetching, search, and data services.
 
 ## 示例程序（demo）
 
-在 `packages/stock_helper/demo` 目录下提供了不同新闻来源的示例程序：
-
-- `wallstreet_mock_demo.py`：华尔街见闻来源（本地 JSONL mock 回放）
-- `jin10_jsonl_demo.py`：金十来源（本地 JSONL 解析示例）
-
-在仓库根目录执行：
-
-```bash
-uv run python packages/stock_helper/demo/wallstreet_mock_demo.py
-uv run python packages/stock_helper/demo/jin10_jsonl_demo.py
-```
+在 `packages/stock_helper/demo` 目录下提供了不同新闻来源的示例程序，参考[demo文档](./demo/README.md) 进行使用
 
 ## 运行测试
 
